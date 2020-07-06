@@ -26,6 +26,9 @@ vet:
 		exit 1; \
 	fi
 
+sweep:
+	go test $(TEST) -v -sweep=1
+
 fmt:
 	gofmt -w $(GOFMT_FILES)
 
@@ -58,5 +61,5 @@ ifeq (,$(wildcard $(GOPATH)/src/$(WEBSITE_REPO)))
 endif
 	@$(MAKE) -C $(GOPATH)/src/$(WEBSITE_REPO) website-provider-test PROVIDER_PATH=$(shell pwd) PROVIDER_NAME=$(PKG_NAME) PROVIDER_SLUG=$(SLUG)
 
-.PHONY: build test testacc vet fmt fmtcheck errcheck test-compile website website-test
+.PHONY: build test testacc vet fmt fmtcheck errcheck test-compile website website-test sweep
 

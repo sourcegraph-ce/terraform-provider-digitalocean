@@ -27,6 +27,7 @@ vet:
 	fi
 
 sweep:
+	@echo "WARNING: This will destroy infrastructure. Use only in development accounts."
 	go test $(TEST) -v -sweep=1
 
 fmt:

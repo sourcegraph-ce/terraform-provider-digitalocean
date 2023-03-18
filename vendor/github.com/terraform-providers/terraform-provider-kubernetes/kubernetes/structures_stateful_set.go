@@ -3,7 +3,7 @@ package kubernetes
 import (
 	"errors"
 	"fmt"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 	v1 "k8s.io/api/apps/v1"

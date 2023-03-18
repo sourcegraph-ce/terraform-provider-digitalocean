@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 
 	"github.com/digitalocean/godo"
 	"github.com/hashicorp/terraform-plugin-sdk/helper/acctest"

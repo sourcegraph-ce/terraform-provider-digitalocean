@@ -3,7 +3,7 @@ package kubernetes
 import (
 	"bytes"
 	"fmt"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"net/http"
 	"os"
 

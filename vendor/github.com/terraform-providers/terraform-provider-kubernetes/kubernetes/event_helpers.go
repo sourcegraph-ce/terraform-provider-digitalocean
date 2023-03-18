@@ -2,7 +2,7 @@ package kubernetes
 
 import (
 	"fmt"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"sort"
 
 	api "k8s.io/api/core/v1"

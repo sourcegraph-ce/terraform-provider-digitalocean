@@ -3,7 +3,7 @@ package digitalocean
 import (
 	"context"
 	"fmt"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"time"
 
 	"github.com/digitalocean/godo"

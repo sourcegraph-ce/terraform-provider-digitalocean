@@ -2,7 +2,7 @@ package kubernetes
 
 import (
 	"fmt"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 	"k8s.io/api/extensions/v1beta1"
